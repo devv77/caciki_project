@@ -1,4 +1,5 @@
 import React from 'react';
+import Gallery from '../../components/gallery/gallery.component';
 
 
 import './homepage.styles.scss';
@@ -20,7 +21,7 @@ const HomePage = ({}) => (
       </div>
     </div>
     <div className="menu">
-      <p className="menu1">Étlap letöltése</p>
+      <p className="menu1"><a className="menu-link" href="/test_menu.pdf" download>Étlap letöltése</a></p>
       <p className="menu2">
         A gomb megnyomása után az étlapunk
         <br /> letöltésre kerül PDF formátumban.
@@ -29,6 +30,7 @@ const HomePage = ({}) => (
     <div className="galery">
       <div className="soon">
       <div className="square"> <p className="item1">Galéria</p></div>
+      <Gallery className="pictures"></Gallery>
       </div>
     </div>
     <div className="about">
