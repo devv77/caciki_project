@@ -1,0 +1,49 @@
+.footer{
+    height: 70px;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    //margin-bottom: 25px;
+    background-color: #184FD6;
+    color: white;
+    font-family: 'Open Sans', sans-serif;
+    font-family: 'Space Mono', monospace;
+    //padding: 25px;
+
+    .info{
+        display: flex;
+        align-items: center;
+        justify-content: flex-end;
+    }
+    
+    .address{
+        display: flex;
+        align-items: center;
+        justify-content: flex-end; 
+    }
+
+    .secret{
+        color:#184FD6;
+
+        &:hover{
+            cursor:default;
+        }
+    }
+
+    .logo-container {
+      height: 60px;
+      width: 60px;
+      padding: 10px;
+      //align-items: center;
+      //align-self:center;
+      //padding-left: 100px;
+    }
+
+    .logo{
+       width:inherit;
+       height: inherit; 
+    }
+
+
+    
+}
