@@ -1,0 +1,63 @@
+.header {
+    
+    position:relative;
+    height: 70px;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    //margin-bottom: 25px;
+    background-color: #184FD6;
+    color: white;
+    font-family: 'Open Sans', sans-serif;
+    font-family: 'Space Mono', monospace;
+  
+    .logo-container {
+      height: 60px;
+      width: 60px;
+      padding-left: 15px;
+      align-self:center;
+      align-items: center;
+    }
+
+    .logo{
+       width:inherit;
+       height: inherit; 
+    }
+  
+    .options {
+      width: 50%;
+      height: 100%;
+      display: flex;
+      align-items: center;
+      justify-content: flex-end;
+  
+      .option-e {
+        padding: 10px 40px;
+        cursor:pointer;
+
+        &:hover{
+          color:#FFEE1A;
+          
+        }
+      }
+      .option-g {
+        padding: 10px 40px;
+        cursor:pointer;
+
+        &:hover{
+          color:#FFEE1A;
+          
+        }
+      }
+      .option-k {
+        padding: 10px 40px;
+        cursor:pointer;
+
+        &:hover{
+          color:#FFEE1A;
+          
+        }
+      }
+    }
+  }
+  
