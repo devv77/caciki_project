@@ -1,9 +1,11 @@
 import { Carousel } from 'react-carousel-minimal';
+//import * from '../../../public/images';
+
 
 const Gallery= ()=> {
     const data=[
         {
-            image:"/images/pita1.jpg",
+            image:"../../../public/images/pita1.jpg",
             caption: "Gyros"
         },
         {
