@@ -40,7 +40,7 @@
     padding: 20px 80px;
 
   }
-  
+
   .landing{
     position: inherit;
     display:flex;
@@ -51,29 +51,16 @@
     background-size: auto;
     background-repeat: no-repeat;
     animation: 1s ease-out 0s 1 slideInFromLeft;
+
     .main-picture{
       //display:flex;
       position:absolute;
       left: 50%;
-      top: 20%;     
-      //animation: 1s ease-out 0s 1 slideInFromRight;
-    }
-
-    .name1{                
-      font-size:3em;
-      font-weight: bold;
-        
-    }
-    
-    .pont{
-      color:#184FD6;
-    }
-
-    .name2{        
-      font-size:2em;
-      color:#77777A;
+      top: 50%;     
+      animation: 1s ease-out 0s 1 slideInFromRight;
     }
   }
+  
 
   .menu{
     display:flex;
@@ -90,14 +77,14 @@
     text-align: center;
     
     .menu1{
-      @include createBox(500px, 70px, 1px);
+      @include createBox(600px, 100px, 1px);
       position: absolute;
       background-color: white;
       font-size: 45px;
       font-weight: bold;
       color:#184FD6;
-      border-radius: 20px;
-      padding:10px;
+      border-radius: 50px;
+      padding-bottom: 20px;      
       cursor: pointer;
 
       &:hover {
@@ -135,7 +122,7 @@
   .galery{
     display:flex;
     position: inherit;
-    width:100%;
+    //width:100%;
     height:800px;
     margin:50px;
     
@@ -158,7 +145,7 @@
     display: flex;
     position:inherit;
     width: 100%;
-    height:900px;    
+    height:750px;    
     background-image: url("../../assets/caciki_sorminta.svg");
     background-repeat: no-repeat;
     background-size: cover;
@@ -175,6 +162,18 @@
         .maps1{
           border-radius:50px;
           border:1px; 
+        }
+
+        .pic1{
+          width:430px;
+          height:170px;
+          margin-bottom: 30px;
+        }
+
+        .opening{
+          width:430px;
+          height:280px;
+          right: 350px ;          
         }
   
       
