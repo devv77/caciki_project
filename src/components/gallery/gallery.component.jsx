@@ -6,17 +6,17 @@ const MyGallery =() =>{
   const images = [
     {
       headerText: null,
-      image: process.env.PUBLIC_URL + "/pita1.jpg",
+      image: process.env.PUBLIC_URL + "/images/pita1.jpg",
       subText: null,
     },
     {
       headerText: null,
-      image: process.env.PUBLIC_URL + "/pita2.jpg",
+      image: process.env.PUBLIC_URL + "/images/pita2.jpg",
       subText: null,
     },
     {
       headerText: null,
-      image: process.env.PUBLIC_URL + "/pita3.jpg",
+      image: process.env.PUBLIC_URL + "/images/pita3.jpg",
       subText: null,
     },
   ];
