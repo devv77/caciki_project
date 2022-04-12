@@ -84,7 +84,9 @@
       font-weight: bold;
       color:#184FD6;
       border-radius: 50px;
-      padding-bottom: 20px;      
+      //padding-bottom: 20px;
+      border:0;
+      font-family:'Space Mono';      
       cursor: pointer;
 
       &:hover {
@@ -125,18 +127,17 @@
     //width:100%;
     height:800px;
     margin:50px;
-    
-
-    
-    
+        
     .pictures{
-      display:flex;     
-      position: absolute;
-      left:50%;
-      top:50%;
-      margin: -25px 0 0 -25px;
-      width:100%;
-      height:70%;
+      display:flex;
+      position: inherit;
+      //left:50%;
+      //top:50%;
+      //margin: -25px 0 0 -25px;
+      //width:100%;
+      //height:100%;
+      //justify-content: center;
+      align-items: center;
     }
 
   }

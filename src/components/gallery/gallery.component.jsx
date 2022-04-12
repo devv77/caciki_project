@@ -2,6 +2,8 @@ import React from 'react';
 import { Carousel } from '@sefailyasoz/react-carousel'
 import { FaArrowLeft, FaArrowRight } from 'react-icons/fa'
 
+import './gallery.styles.css'
+
 const MyGallery =() =>{
   const images = [
     {

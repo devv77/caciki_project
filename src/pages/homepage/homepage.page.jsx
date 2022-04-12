@@ -25,11 +25,21 @@ const HomePage = ({}) => (
       </div> */}
     </div>
     <div className="menu">
-      <p className="menu1">
-        <a className="menu-link" href="/test_menu.pdf" download>
+      <button className="menu1">
+        <a
+          className="menu-link"
+          href={process.env.PUBLIC_URL + "/test_menu.pdf"}
+          download
+        >
           Étlap letöltése
         </a>
-      </p>
+      </button>
+      {/*<p className="menu1">
+        
+        {/*<a className="menu-link" href="/test_menu.pdf" download>
+          Étlap letöltése
+    </a>}
+      </p>*/}
       <p className="menu2">
         A gomb megnyomása után az étlapunk
         <br /> letöltésre kerül PDF formátumban.
@@ -38,8 +48,9 @@ const HomePage = ({}) => (
     <div className="galery">
       <div className="soon">
         <p className="item1">Galéria</p>
-
-        <Gallery className="pictures"></Gallery>
+        <div className="pictures">
+          <Gallery ></Gallery>
+        </div>
       </div>
     </div>
     <div className="about">
@@ -57,10 +68,10 @@ const HomePage = ({}) => (
         ></iframe>
 
         <div>
-          <AboutPic className="pic1"/>
+          <AboutPic className="pic1" />
 
           <div>
-            <OpenPic className="opening"/>
+            <OpenPic className="opening" />
           </div>
         </div>
       </div>
