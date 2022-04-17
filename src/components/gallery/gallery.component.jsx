@@ -8,17 +8,20 @@ const MyGallery =() =>{
   const images = [
     {
       headerText: null,
-      image: process.env.PUBLIC_URL + "/images/pita1.jpg",
+      //image: process.env.PUBLIC_URL + "/images/pita1.jpg",
+      image: "https://picsum.photos/500/700",
       subText: null,
     },
     {
       headerText: null,
-      image: process.env.PUBLIC_URL + "/images/pita2.jpg",
+      //image: process.env.PUBLIC_URL + "/images/pita2.jpg",
+      image: "https://picsum.photos/500/700",
       subText: null,
     },
     {
       headerText: null,
-      image: process.env.PUBLIC_URL + "/images/pita3.jpg",
+      //image: process.env.PUBLIC_URL + "/images/pita3.jpg",
+      image: "https://picsum.photos/500/700",
       subText: null,
     },
   ];
@@ -29,6 +32,7 @@ const MyGallery =() =>{
     rightItem={<FaArrowRight />}
     leftItem={<FaArrowLeft />}
     animationDuration={3000}
+    infinite={true}
     size="normal"
   />;
 }

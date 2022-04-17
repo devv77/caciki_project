@@ -21,9 +21,9 @@ const Header=() => {
         <EPic className="option-e" />
 
         <GPic className="option-g"/>*/}
-        <div className="option-k">étlap</div>
-        <div className="option-k"><b>galéria</b></div>
-        <div className="option-k"><b>kapcsolat</b></div>
+        <div className="option-k"><a href="#menu">étlap</a></div>
+        <div className="option-k"><a href="#gallery"><b>galéria</b></a></div>
+        <div className="option-k"><a href="#info"><b>kapcsolat</b></a></div>
       </div>
     </div>
   );
