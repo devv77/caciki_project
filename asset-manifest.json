@@ -1,18 +1,28 @@
 {
   "files": {
-    "main.css": "/caciki_project/static/css/main.730f5ed9.css",
-    "main.js": "/caciki_project/static/js/main.40dfd011.js",
+    "main.css": "/caciki_project/static/css/main.5c3cbb4a.css",
+    "main.js": "/caciki_project/static/js/main.97c54f27.js",
     "static/js/787.24bc257c.chunk.js": "/caciki_project/static/js/787.24bc257c.chunk.js",
+    "static/media/HAMAROSANsoon.svg": "/caciki_project/static/media/HAMAROSANsoon.2db93bb7e741504f2306ef391b1f16d0.svg",
     "static/media/caciki_szobor.svg": "/caciki_project/static/media/caciki_szobor.e20512f0a6b640721cac.svg",
+    "static/media/nyitvatartas.svg": "/caciki_project/static/media/nyitvatartas.edfb3713522470461e8a79782933f635.svg",
     "static/media/caciki_sorminta.svg": "/caciki_project/static/media/caciki_sorminta.a0a40d503993253ff5e9.svg",
+    "static/media/caciki_tipo_kek.svg": "/caciki_project/static/media/caciki_tipo_kek.3c3bfe3c9cc3b241746b8e77c5866b34.svg",
+    "static/media/caciki_tipo_fekete.svg": "/caciki_project/static/media/caciki_tipo_fekete.56eb0e729a2e097bba2d431fd9b06a68.svg",
+    "static/media/caciki_kapcsolat_feher.svg": "/caciki_project/static/media/caciki_kapcsolat_feher.9d4d88996df371f63ce8fb845ce0d8f1.svg",
+    "static/media/caciki_galéria_feher.svg": "/caciki_project/static/media/caciki_galéria_feher.bacb13a7cc0fed0bef6ed3f75f3d6a81.svg",
     "static/media/caciki_logo_feher.svg": "/caciki_project/static/media/caciki_logo_feher.bf45cc07b96073b2740c98a5c362a63f.svg",
+    "static/media/caciki_etlap_sarga.svg": "/caciki_project/static/media/caciki_etlap_sarga.652c5c41ae26caa33a42df05d5304b9f.svg",
+    "static/media/caciki_etlap_feher.svg": "/caciki_project/static/media/caciki_etlap_feher.18b410762a26d77426c79e9ad728afc1.svg",
+    "static/media/caciki_fb_szurke.svg": "/caciki_project/static/media/caciki_fb_szurke.a896983dfdb6d14e3e577b2080411029.svg",
+    "static/media/caciki_insta_szurke.svg": "/caciki_project/static/media/caciki_insta_szurke.af04cd8200a9b383ee6bcfbda9fc739f.svg",
     "index.html": "/caciki_project/index.html",
-    "main.730f5ed9.css.map": "/caciki_project/static/css/main.730f5ed9.css.map",
-    "main.40dfd011.js.map": "/caciki_project/static/js/main.40dfd011.js.map",
+    "main.5c3cbb4a.css.map": "/caciki_project/static/css/main.5c3cbb4a.css.map",
+    "main.97c54f27.js.map": "/caciki_project/static/js/main.97c54f27.js.map",
     "787.24bc257c.chunk.js.map": "/caciki_project/static/js/787.24bc257c.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.730f5ed9.css",
-    "static/js/main.40dfd011.js"
+    "static/css/main.5c3cbb4a.css",
+    "static/js/main.97c54f27.js"
   ]
 }
