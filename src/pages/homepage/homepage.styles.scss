@@ -1,162 +1,222 @@
-@mixin createBox($width, $height, $margin){
-  width:$width;
-  height:$height;
-  margin:$margin;
-  transition:.3s all ease-in-out;
+@mixin createBox($width, $height, $margin) {
+  width: $width;
+  height: $height;
+  margin: $margin;
+  transition: 0.3s all ease-in-out;
 }
 
 @keyframes slideInFromLeft {
   0% {
-      transform: translateX(-100%);
+    transform: translateX(-100%);
   }
   100% {
-      transform: translateX(0);
+    transform: translateX(0);
   }
 }
 
 @keyframes slideInFromRight {
   0% {
-      transform: translateX(+100%);
+    transform: translateX(+100%);
   }
   100% {
-      transform: translateX(0);
+    transform: translateX(0);
   }
 }
 
-.square{
-  position:relative;
-  height:30px;
-  width:8px;
-  background-color: #184FD6;
-  top:5px;
+.square {
+  position: relative;
+  height: 30px;
+  width: 8px;
+  background-color: #184fd6;
+  top: 5px;
 }
 
 .homepage {
-    position:relative;
+  position: relative;
+  display: flex;
+  width: 100%;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px 80px;
+}
+
+.landing {
+  position: inherit;
+  display: flex;
+  width: 100%;
+  height: 1000px;
+  background-position: left 100px top 0;
+  background-image: url("../../assets/caciki_szobor.svg");
+  background-size: auto;
+  background-repeat: no-repeat;
+  animation: 1s ease-out 0s 1 slideInFromLeft;
+
+  .main-picture {
+    //display:flex;
+    position: absolute;
+    left: 50%;
+    top: 35%;
+    width: 35%;
+    height: 35%;
+    //animation: 1s ease-out 0s 1 slideInFromRight;
+  }
+}
+
+.menu {
+  display: flex;
+  position: inherit;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 400px;
+  background-position: center;
+  background-image: url("../../assets/caciki_sorminta.svg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  align-items: center;
+  text-align: center;
+
+  .menu1 {
+    @include createBox(600px, 100px, 1px);
+    position: absolute;
+    background-color: white;
+    font-size: 45px;
+    font-weight: bold;
+    color: #184fd6;
+    border-radius: 50px;
+    //padding-bottom: 20px;
+    border: 0;
+    font-family: "Space Mono";
+    cursor: pointer;
+
+    &:hover {
+      background-color: #ffee1a;
+      color: #184fd6;
+      border: none;
+      transform: translate(0%, -50%);
+    }
+
+    .menu-link {
+      text-decoration: inherit;
+      color: inherit;
+    }
+  }
+
+  .menu2 {
+    position: relative;
+    top: 30%;
+    color: #68686a;
+    font-weight: bold;
+    font-size: 13px;
+  }
+}
+
+.item1 {
+  margin-left: 100px;
+  font-size: 30px;
+  font-weight: bold;
+  border-left: 9px solid #184fd6;
+  padding-left: 10px;
+  height: 50px;
+}
+.soon {
+  background-color: #68686a;
+
+  .soon-text {
+    position: absolute;
+    width: 850px;
+    height: 230px;
+    left: calc(50% - 850px / 2 - 14.5px);
+    top: 1700.97px;
+
+    font-family: "Space Mono";
+    font-style: normal;
+    font-weight: 700;
+    font-size: 144px;
+    line-height: 213px;
     display: flex;
-    width:100%;
-    flex-direction: column;
-    align-items: center;
-    padding: 20px 80px;
-
-  }
-  
-  .landing{
-    position: inherit;
-    display:flex;
-    width:100%;
-    height:1000px;
-    background-position: center;
-    background-image: url("../../assets/caciki_szobor.svg");
-    background-size: auto;
-    background-repeat: no-repeat;
-    animation: 1s ease-out 0s 1 slideInFromLeft;
-    .main-picture{
-      display:flex;
-      position:absolute;
-      left: 70%;
-      top: 20%;     
-      //animation: 1s ease-out 0s 1 slideInFromRight;
-    }
-  
-    .name1{                
-      font-size:3em;
-      font-weight: bold;
-        
-    }
-    
-    .pont{
-      color:#184FD6;
-    }
-
-    .name2{        
-      font-size:2em;
-      color:#77777A;
-    }
-  }
-
-  .menu{
-    display:flex;
-    position: inherit;
-    align-items: center;
-    justify-content: center;
-    width:100%;
-    height:400px;
-    background-position: center;
-    background-image: url("../../assets/caciki_sorminta.svg");
-    background-repeat: no-repeat;
-    background-size: cover;
     align-items: center;
     text-align: center;
-    
-    .menu1{
-      @include createBox(500px, 65px, 10px);
-      position: relative;
-      background-color: white;
-      font-size: 45px;
-      font-weight: bold;
-      color:#184FD6;
-      position:absolute;
-      border-radius: 25%;
-      cursor: pointer;
 
-      &:hover {
-        background-color: #FFEE1A;
-        color: #184FD6;
-        border: none;
-        transform:translate(0%,-50%)
-      }
-    }
+    color: #ffffff;
 
-    .menu2{
-      position: relative;
-      top: 30%;
-      color:#68686A;
-      font-weight: bold;
-      font-size:13px;
-    }
-
+    transform: rotate(-15.14deg);
   }
+}
+.galery {
+  //display:flex;
+  position: inherit;
+  width: 100%;
+  height: 800px;
+  //margin-left: 50px;
 
-  .galery{
-    display:flex;
-    position: inherit;
-    width:100%;
-    height:900px;
-    margin:50px;
-    
-
-    .item1{
-      margin-left:15px;
-      font-size: 30px;
-      font-weight: bold;
-    }
-    
-  }
-
-  .about{
+  .pictures {
     display: flex;
-    position:inherit;
     width: 100%;
-    height:600px;    
-    background-image: url("../../assets/caciki_sorminta.svg");
-    background-repeat: no-repeat;
-    background-size: cover;
+    height: 600px;
+    position: relative;
+    justify-content: center;
+    margin: 0 auto;
+    align-content: center;
+    opacity: 20%;
+  }
 
-    .items{
-      position:inherit;
-      width:80%;
-      display:flex;
-      justify-content: space-between;
-      margin: 30px auto;
+  .inpicture {
+    display: flex;
+    //margin:0 auto;
+  }
+}
 
-      .maps{      
+.about {
+  display: flex;
+  position: inherit;
+  width: 100%;
+  height: 750px;
+  background-image: url("../../assets/caciki_sorminta.svg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  flex-direction: column;
 
-        .maps1{
-          border:1px;
-        }
+  .items {
+    position: inherit;
+    width: 80%;
+    display: flex;
+    justify-content: space-around;
+    margin: 30px auto;
+
+    .maps1 {
+      border-radius: 50px;
+      border: 1px;
+    }
+
+    .pic1 {
+      width: 430px;
+      height: 170px;
+      margin-bottom: 20px;
+    }
+
+    .opening {
+      width: 430px;
+      height: 280px;
+      right: 350px;
+    }
+
+    .buttons-site {
+      display: flex;
+      //width:200px;
+
+      .insta {
+        height: 40px;
+        width: 40px;
+        float: left;
+        margin-right: 15px;
       }
-      
+
+      .facebook {
+        height: 40px;
+        width: 40px;
+        float: right;
+      }
     }
   }
-  
+}

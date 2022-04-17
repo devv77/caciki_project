@@ -11,10 +11,11 @@
     font-family: 'Open Sans', sans-serif;
     font-family: 'Space Mono', monospace;
   
+   
     .logo-container {
       height: 60px;
       width: 60px;
-      padding-left: 15px;
+      margin-left: 100px;
       align-self:center;
       align-items: center;
     }
@@ -30,18 +31,27 @@
       display: flex;
       align-items: center;
       justify-content: flex-end;
+      margin-right:100px;
   
       .option-e {
-        padding: 10px 40px;
+        height:120px;
+        width: 60px;
+        //padding: 10px 40px;
         cursor:pointer;
 
-        &:hover{
-          color:#FFEE1A;
-          
+        &:hover+ .option-e2{            
+          display:none;        
         }
       }
+      .option-e2{
+        display: none;
+        height:120px;
+        width:60px;
+      }
       .option-g {
-        padding: 10px 40px;
+        height:120px;
+        width: 60px;
+        //padding: 10px 40px;
         cursor:pointer;
 
         &:hover{
@@ -52,10 +62,18 @@
       .option-k {
         padding: 10px 40px;
         cursor:pointer;
+        letter-spacing: 2px;
+        font-family: 'Space Mono', 700;
 
         &:hover{
-          color:#FFEE1A;
+          color:#e0d315;
           
+        }
+      }
+      a{
+        color:white;
+        &:hover{
+          color:#e0d315;
         }
       }
     }

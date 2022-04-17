@@ -1,8 +1,14 @@
 import React from "react";
 import {ReactComponent as Logo} from '../../assets/caciki_logo_feher.svg'
+import {ReactComponent as EPic} from '../../assets/caciki_etlap_feher.svg'
+import {ReactComponent as GPic} from '../../assets/caciki_galéria_feher.svg'
+import {ReactComponent as KPic} from '../../assets/caciki_kapcsolat_feher.svg'
+import {ReactComponent as EPicS} from '../../assets/caciki_etlap_sarga.svg'
 import {Link} from 'react-router-dom'
 
 import './header.styles.scss'
+
+const isHover=false;
 
 const Header=() => {
   return (
@@ -11,9 +17,13 @@ const Header=() => {
         <Logo className="logo" />
       </Link>
       <div className="options">
-        <div className="option-e">étlap</div>
-        <div className="option-g">galéria</div>
-        <div className="option-k">kapcsolat</div>
+        {/*<EPicS className="option-e2"/>
+        <EPic className="option-e" />
+
+        <GPic className="option-g"/>*/}
+        <div className="option-k"><a href="#menu">étlap</a></div>
+        <div className="option-k"><a href="#gallery"><b>galéria</b></a></div>
+        <div className="option-k"><a href="#info"><b>kapcsolat</b></a></div>
       </div>
     </div>
   );
