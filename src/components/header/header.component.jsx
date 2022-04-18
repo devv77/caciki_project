@@ -17,11 +17,7 @@ const Header=() => {
         <Logo className="logo" />
       </Link>
       <div className="options">
-        {/*<EPicS className="option-e2"/>
-        <EPic className="option-e" />
-
-        <GPic className="option-g"/>*/}
-        <div className="option-k"><a href="#menu">étlap</a></div>
+        <div className="option-k"><a href="#menu"><b>étlap</b></a></div>
         <div className="option-k"><a href="#gallery"><b>galéria</b></a></div>
         <div className="option-k"><a href="#info"><b>kapcsolat</b></a></div>
       </div>

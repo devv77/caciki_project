@@ -34,12 +34,6 @@ const HomePage = ({}) => (
           Étlap letöltése
         </a>
       </button>
-      {/*<p className="menu1">
-        
-        {/*<a className="menu-link" href="/test_menu.pdf" download>
-          Étlap letöltése
-    </a>}
-      </p>*/}
       <p className="menu2">
         A gomb megnyomása után az étlapunk
         <br /> letöltésre kerül PDF formátumban.
@@ -48,6 +42,7 @@ const HomePage = ({}) => (
     <div className="soon">
       <span className="soon-text">HAMAROSAN</span>
       <div id="gallery" className="galery">
+        <br/>
         <span className="item1">Galéria</span>
         <div className="pictures">
           <div className="inpicture">
