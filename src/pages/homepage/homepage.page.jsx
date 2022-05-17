@@ -1,8 +1,10 @@
 import React from "react";
 import Gallery from "../../components/gallery/gallery.component";
-import {ReactComponent as LogoPic} from "../../assets/caciki_tipo_fekete.svg"; 
+//import {ReactComponent as LogoPic} from "../../assets/caciki_tipo_fekete.svg"; 
+import {ReactComponent as LogoPic} from "../../assets/caciki_tipo_landing-01.svg"
 import {ReactComponent as AboutPic} from "../../assets/caciki_tipo_kek.svg"
 import {ReactComponent as OpenPic} from "../../assets/nyitvatartas.svg"
+//import {ReactComponent as OpenPic} from "../../assets/caciki_info-01.svg"
 import {ReactComponent as InstaPic} from "../../assets/caciki_insta_szurke.svg"
 import {ReactComponent as FBPic} from "../../assets/caciki_fb_szurke.svg"
 import{ReactComponent as SoonPic} from "../../assets/HAMAROSANsoon.svg"
@@ -10,7 +12,7 @@ import{ReactComponent as SoonPic} from "../../assets/HAMAROSANsoon.svg"
 import "./homepage.styles.scss";
 
 const HomePage = ({}) => (
-  <div className="homePage">
+  <div id="homepage" className="homePage">
     <div className="landing">
       <LogoPic className="main-picture" />
       {/* <div className="main-picture">
@@ -28,7 +30,7 @@ const HomePage = ({}) => (
       <button className="menu1">
         <a
           className="menu-link"
-          href={process.env.PUBLIC_URL + "/test_menu.pdf"}
+          href={process.env.PUBLIC_URL + "/Etlap_A4_RGB.pdf"}
           download
         >
           Étlap letöltése

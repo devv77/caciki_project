@@ -13,9 +13,9 @@ const isHover=false;
 const Header=() => {
   return (
     <div className="header">
-      <Link className ='logo-container' to='/'>
+      <a className ='logo-container' href="#homepage">
         <Logo className="logo" />
-      </Link>
+      </a>
       <div className="options">
         <div className="option-k"><a href="#menu"><b>étlap</b></a></div>
         <div className="option-k"><a href="#gallery"><b>galéria</b></a></div>
