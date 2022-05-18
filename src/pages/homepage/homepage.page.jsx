@@ -3,8 +3,8 @@ import Gallery from "../../components/gallery/gallery.component";
 //import {ReactComponent as LogoPic} from "../../assets/caciki_tipo_fekete.svg"; 
 import {ReactComponent as LogoPic} from "../../assets/caciki_tipo_landing-01.svg"
 import {ReactComponent as AboutPic} from "../../assets/caciki_tipo_kek.svg"
-import {ReactComponent as OpenPic} from "../../assets/nyitvatartas.svg"
-//import {ReactComponent as OpenPic} from "../../assets/caciki_info-01.svg"
+//import {ReactComponent as OpenPic} from "../../assets/nyitvatartas.svg"
+import {ReactComponent as OpenPic} from "../../assets/caciki_info-01.svg"
 import {ReactComponent as InstaPic} from "../../assets/caciki_insta_szurke.svg"
 import {ReactComponent as FBPic} from "../../assets/caciki_fb_szurke.svg"
 import{ReactComponent as SoonPic} from "../../assets/HAMAROSANsoon.svg"
@@ -48,7 +48,8 @@ const HomePage = ({}) => (
         <span className="item1">Galéria</span>
         <div className="pictures">
           <div className="inpicture">
-            <Gallery></Gallery>
+            <div className="inin"><Gallery></Gallery></div>
+            
           </div>
         </div>
       </div>
@@ -62,7 +63,7 @@ const HomePage = ({}) => (
           src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1139.8790339072991!2d18.432063719810813!3d47.194966850201205!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4769f7be20580885%3A0x7bc5e773d57f02b5!2zU3rDqWtlc2ZlaMOpcnbDoXIsIFpzb2x0IHUuIDEsIDgwMDA!5e0!3m2!1shu!2shu!4v1648575747617!5m2!1shu!2shu"
           width="600"
           height="550"
-          allowFullScreen=""
+          allowFullScreen={false}
           loading="lazy"
           referrerPolicy="no-referrer-when-downgrade"
         ></iframe>
