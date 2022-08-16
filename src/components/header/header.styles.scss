@@ -18,14 +18,18 @@
       height: 60px;
       width: 60px;
       margin-left: 100px;
-      align-self:center;
+      margin-top: 10px;
+      align-self: center;
       align-items: center;
+      bottom: 0;      
+      
     }
 
     .logo{
-       width:inherit;
-       height: inherit; 
-    }
+      //width: inherit;
+      height: inherit; 
+      
+   }
   
     .options {
       width: 50%;

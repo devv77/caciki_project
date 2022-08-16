@@ -1,30 +1,22 @@
 import React from "react";
 import Gallery from "../../components/gallery/gallery.component";
+
 //import {ReactComponent as LogoPic} from "../../assets/caciki_tipo_fekete.svg"; 
-import {ReactComponent as LogoPic} from "../../assets/caciki_tipo_landing-01.svg"
-import {ReactComponent as AboutPic} from "../../assets/caciki_tipo_kek.svg"
+import {ReactComponent as TypoPic} from "../../assets/desk_land_caciki-07.svg"
+import {ReactComponent as SzoborPic} from "../../assets/desk_land_szobor-06-03.svg"
+import {ReactComponent as AboutPic} from "../../assets/caciki_info-02.svg"
 //import {ReactComponent as OpenPic} from "../../assets/nyitvatartas.svg"
 import {ReactComponent as OpenPic} from "../../assets/caciki_info-01.svg"
 import {ReactComponent as InstaPic} from "../../assets/caciki_insta_szurke.svg"
 import {ReactComponent as FBPic} from "../../assets/caciki_fb_szurke.svg"
-import{ReactComponent as SoonPic} from "../../assets/HAMAROSANsoon.svg"
 
 import "./homepage.styles.scss";
 
 const HomePage = ({}) => (
   <div id="homepage" className="homePage">
     <div className="landing">
-      <LogoPic className="main-picture" />
-      {/* <div className="main-picture">
-        { <p>
-          <span className="name1">
-            caciki<span className="pont">.</span>
-          </span>
-          <br />
-          <span className="name2">pita bar</span>
-        </p> }
-        
-      </div> */}
+      <SzoborPic className="szobor"/>
+      <TypoPic className="main-picture" />    
     </div>
     <div id="menu" className="menu">
       <button className="menu1">
@@ -41,21 +33,20 @@ const HomePage = ({}) => (
         <br /> letöltésre kerül PDF formátumban.
       </p>
     </div>
-    <div className="soon">
-      <span className="soon-text">HAMAROSAN</span>
+
       <div id="gallery" className="galery">
         <br/>
-        <span className="item1">Galéria</span>
+        <span className="item1">galéria</span>
         <div className="pictures">
           <div className="inpicture">
-            <div className="inin"><Gallery></Gallery></div>
-            
+            <div className="inin"><Gallery></Gallery>            
+            </div>            
           </div>
         </div>
       </div>
-    </div>
+
     <div id="info" className="about">
-      <p className="item1">Kapcsolat</p>
+      <p className="item1">kapcsolat</p>
 
       <div className="items">
         <iframe

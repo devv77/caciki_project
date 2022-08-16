@@ -44,21 +44,29 @@
   position: relative;
   display: flex;
   width: 100%;
-  height: 1000px;
-  background-position: left 100px top 0;
-  background-image: url("../../assets/caciki_szobor.svg");
-  background-size: auto;
-  background-repeat: no-repeat;
-  animation: 1s ease-out 0s 1 slideInFromLeft;
+  //height: 800px;
+  .st1{
+    color:black;
+  }
+
+  .szobor{
+    position:inherit;
+    display:flex;
+    left:100px;
+    width:50%;
+    height:100%;
+    animation: 1s ease-out 0s 1 slideInFromLeft;
+  }
 
   .main-picture {
     //display:flex;
     position: inherit;
-    left: 1000px;
-    top: 35%;
+    //left: 1000px;
+    top: 100px;
     width: 35%;
     height: 35%;
-    //animation: 1s ease-out 0s 1 slideInFromRight;
+    animation: 1s ease-out 0s 1 slideInFromRight;
+    
   }
 }
 
@@ -119,30 +127,7 @@
   padding-left: 10px;
   height: 50px;
 }
-.soon {
-  background-color: #68686a;
 
-  .soon-text {
-    position: absolute;
-    width: 850px;
-    height: 230px;
-    left: calc(50% - 700px / 2 - 14.5px);
-    top: 1700.97px;
-
-    font-family: "Space Mono";
-    font-style: normal;
-    font-weight: 700;
-    font-size: 144px;
-    line-height: 213px;
-    display: flex;
-    align-items: center;
-    text-align: center;
-
-    color: #ffffff;
-
-    transform: rotate(-15.14deg);
-  }
-}
 .galery {
   //display:flex;
   position: inherit;
@@ -159,10 +144,9 @@
     justify-content: center;
     margin: 0 auto;
     align-content: center;
-    opacity: 20%;
-    
     
   }
+
   .inpicture {
     display: flex;
     //position:absolute;
@@ -190,25 +174,29 @@
 
   .items {
     position: inherit;
-    width: 80%;
+    width: 70%;
     display: flex;
     justify-content: space-around;
     margin: 10px auto;
 
+    
+
     .maps1 {
       border-radius: 50px;
       border: 1px;
+      margin-right: 150px;
+      
     }
 
     .pic1 {
-      width: 430px;
+      width: 65%;
       height: 170px;
-      margin-bottom: 20px;
+
     }
 
     .opening {
-      width: 400px;
-      height: 330px;    
+      width: 80%;
+      height: 100%;    
     }
 
     .buttons-site {
@@ -219,10 +207,11 @@
         height: 40px;
         width: 40px;
         float: left;
-        margin-left:15px;
+        //margin-left:10px;
         margin-right: 15px;
       }
-      .st2:hover{
+      
+      .fb2:hover{
         fill:#184fd6
       }
 
@@ -233,5 +222,5 @@
       }
     }
   }
-  .st0{fill:#184FD6;}
+  
 }

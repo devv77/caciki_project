@@ -1,9 +1,6 @@
 import React from "react";
-import {ReactComponent as Logo} from '../../assets/caciki_logo_feher.svg'
-import {ReactComponent as EPic} from '../../assets/caciki_etlap_feher.svg'
-import {ReactComponent as GPic} from '../../assets/caciki_galéria_feher.svg'
-import {ReactComponent as KPic} from '../../assets/caciki_kapcsolat_feher.svg'
-import {ReactComponent as EPicS} from '../../assets/caciki_etlap_sarga.svg'
+import {ReactComponent as Logo} from '../../assets/caciki_logo_new.svg'
+
 import {Link} from 'react-router-dom'
 
 import './header.styles.scss'

@@ -1,5 +1,5 @@
 import React from 'react';
-import {ReactComponent as Logo} from '../../assets/caciki_logo_feher.svg'
+import {ReactComponent as Logo} from '../../assets/caciki_logo_new.svg'
 import {Link} from 'react-router-dom'
 
 import './footer.styles.scss'
@@ -9,10 +9,7 @@ const Footer=() =>{
       <div className="footer">
         <div className="address">
           Caciki pita bar <br /> Székesfehérvár, Zsolt utca 1.
-        </div>
-        <Link className="logo-container" to="/">
-          <Logo className="logo" />
-        </Link>
+        </div>       
         <div className="info">
           <div className="secret">
             Created by: David Lencses <br /> Designed by: Alex Kemény
