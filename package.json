@@ -2,7 +2,7 @@
   "name": "caciki-proj",
   "version": "0.1.0",
   "private": true,
-  "homepage": "https://pite4.duckdns.org/caciki",
+  "homepage": "https://pite4.duckdns.org/",
   "dependencies": {
     "@emotion/react": "^11.9.0",
     "@emotion/styled": "^11.8.1",

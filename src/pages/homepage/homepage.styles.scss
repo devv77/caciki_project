@@ -185,18 +185,21 @@
       border-radius: 50px;
       border: 1px;
       margin-right: 150px;
-      
+      height: 170%;
+      width: 60%;
     }
 
     .pic1 {
-      width: 65%;
-      height: 170px;
+      display: flex;
+      position: inherit;
+      width: 60%;
+      height: 50%;
 
     }
 
     .opening {
-      width: 80%;
-      height: 100%;    
+      width: 65%;
+      height: 85%;    
     }
 
     .buttons-site {
