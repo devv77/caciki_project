@@ -3,8 +3,8 @@ import  { BrowserRouter as Router, Routes, Route} from 'react-router-dom';
 import Header from './components/header/header.component'
 
 import MobileHeader from './components/mobile/header/header.component'
-import MobileFooter from '.components/mobile/footer/footer.component'
-import MobileHomePage from '.components/mobile'
+import MobileFooter from './components/mobile/footer/footer.component'
+import MobileHomePage from './pages/mobile/homepage/homepage.page'
 
 import './App.css';
 import HomePage from './pages/homepage/homepage.page';
@@ -29,9 +29,9 @@ function App() {
         <Router>
           <MobileHeader />
           <Routes>
-            <Route path="/" element={<MobileHomePage/>}></Route>
+            <Route path="/" element={<MobileHomePage />}></Route>
           </Routes> 
-          <MobielFooter/>         
+          <MobileFooter/>         
         </Router>
       </MediaQuery>
     </div>

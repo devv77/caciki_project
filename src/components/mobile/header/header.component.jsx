@@ -1,13 +1,13 @@
 import React from "react";
-import {ReactComponent as Logo} from '../../assets/caciki_logo_new.svg'
-import './header.styles.scss'
+import {ReactComponent as Logo} from '../../../assets/caciki_logo_new.svg'
+import './mheader.styles.scss'
 
 const MobileHeader=() => {
     return (
-      <div className="header">
-        <a className ='logo-container' href="#homepage">
-          <Logo className="logo" />
-        </a>
+      <div className="mheader">
+        <div className ='mlogo-container'>
+          <div className='mlogoc'><Logo className="mlogo" /></div>          
+        </div>
         </div>        
     );
   }

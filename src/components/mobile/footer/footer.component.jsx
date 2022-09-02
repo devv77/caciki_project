@@ -1,14 +1,14 @@
 import React from 'react';
-import {ReactComponent as Logo} from '../../assets/caciki_logo_new.svg'
+import {ReactComponent as Logo} from '../../../assets/caciki_logo_new.svg'
 
 
-import './footer.styles.scss'
+import './mfooter.styles.scss'
 
 const MobileFooter=() =>{
     return (
-      <div className="footer">
+      <div className="mfooter">
         <div className="address">
-          Caciki pita bar <br /> Székesfehérvár, Zsolt utca 1.
+          
         </div>       
         <div className="info">
           <div className="secret">

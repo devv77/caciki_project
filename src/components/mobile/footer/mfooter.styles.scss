@@ -1,0 +1,38 @@
+.mfooter{
+    height: 40px;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    //margin-bottom: 25px;
+    background-color: #184FD6;  
+    color: white;
+    font-family: 'Open Sans', sans-serif;
+    font-family: 'Space Mono', monospace;
+    //padding: 25px;
+
+    .info{
+        display: flex;
+        align-items: center;
+        justify-content: flex-end;
+        margin-right:90px;
+    }
+    
+    .address{
+        display: flex;        
+        font-size: 14px;
+        align-items: center;
+        justify-content: flex-end;
+        margin-left:90px;
+    }
+
+    .secret{
+        color:#184FD6;
+        font-size:10px;
+
+        &:hover{
+            cursor:default;
+        }
+    }
+
+}
+
