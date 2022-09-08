@@ -4,7 +4,7 @@ import Header from './components/header/header.component'
 
 import MobileHeader from './components/mobile/header/header.component'
 import MobileFooter from './components/mobile/footer/footer.component'
-import MobileHomePage from './pages/mobile/homepage/homepage.page'
+import MobileHomePage from './pages/mobile/homepage/mhomepage.page'
 
 import './App.css';
 import HomePage from './pages/homepage/homepage.page';

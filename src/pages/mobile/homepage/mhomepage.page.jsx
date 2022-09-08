@@ -34,16 +34,14 @@ const MobileHomePage = ({}) => (
       </p>
     </div>
 
-    <div id="mgallery" className="mgalery">
-        <br/>
-        <span className="mitem1">galéria</span>
-        <div className="mpictures">
-          <div className="minpicture">
-            <div className="minin"><Gallery></Gallery>            
-            </div>            
-          </div>
-        </div>
-      </div>
+    <div className='galery' id="mgallery">
+      <p className="item1">galéria</p>
+    </div>
+    <div className="mabout">
+      <br/>
+      <p>kapcsolat</p>
+    </div>
+
   </div>
 
 );

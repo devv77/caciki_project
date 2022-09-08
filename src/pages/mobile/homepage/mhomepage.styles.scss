@@ -1,156 +1,172 @@
 @mixin createBox($width, $height, $margin) {
-    width: $width;
-    height: $height;
-    margin: $margin;
-    transition: 0.3s all ease-in-out;
+  width: $width;
+  height: $height;
+  margin: $margin;
+  transition: 0.3s all ease-in-out;
+}
+
+@keyframes slideInFromLeft {
+  0% {
+    transform: translateX(-100%);
   }
-  
-  @keyframes slideInFromLeft {
-    0% {
-      transform: translateX(-100%);
-    }
-    100% {
-      transform: translateX(0);
-    }
+  100% {
+    transform: translateX(0);
   }
-  
-  @keyframes slideInFromRight {
-    0% {
-      transform: translateX(+100%);
-    }
-    100% {
-      transform: translateX(0);
-    }
+}
+
+@keyframes slideInFromRight {
+  0% {
+    transform: translateX(+100%);
   }
+  100% {
+    transform: translateX(0);
+  }
+}
 
 .square {
+  position: relative;
+  height: 30px;
+  width: 8px;
+  background-color: #184fd6;
+  top: 5px;
+}
+
+.mhomepage {
+  position: relative;
+  display: flex;
+  width: 100%;
+  flex-direction: column;
+  align-items: center;
+  //padding: 20px 80px;
+}
+
+.mlanding {
+  padding: 10px 50px;
+  position: relative;
+  display: flex;
+  width: 100%;
+}
+
+.mtypo {
+  width: 80%;
+  margin: 0 auto;
+}
+
+.mszland {
+  width: 100%;
+}
+
+.mszobor {
+  position: inherit;
+  width: 100%;
+  margin-left: 10px;
+}
+
+.mmenu {
+  display: flex;
+  position: inherit;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 200px;
+  background-position: center;
+  background-image: url("../../../assets/caciki_sorminta.svg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  align-items: center;
+  text-align: center;
+
+  .mmenu1 {
+    @include createBox(400px, 75px, 1px);
+    position: absolute;
+    background-color: white;
+    font-size: 30px;
+    font-weight: bold;
+    color: #184fd6;
+    border-radius: 50px;
+    border: 0;
+    font-family: "Space Mono";
+    cursor: pointer;
+
+    &:hover {
+      background-color: #ffee1a;
+      color: #184fd6;
+      border: none;
+      transform: translate(0%, -20%);
+    }
+
+    .mmenu-link {
+      text-decoration: inherit;
+      color: inherit;
+    }
+  }
+
+  .mmenu2 {
     position: relative;
-    height: 30px;
-    width: 8px;
-    background-color: #184fd6;
-    top: 5px;
+    top: 30%;
+    color: #68686a;
+    font-weight: bold;
+    font-size: 13px;
   }
 
-  .mhomepage {
-    position: relative;
-    display: flex;
-    width: 100%;
-    flex-direction: column;
-    align-items: center;
-    //padding: 20px 80px;
-  }
-
-  .mlanding{    
-    padding:10px 50px;
-    position: relative;
-    display: flex;
-    width: 100%;
-  }
-
-  .mtypo{
-    width:80%;
-    margin:0 auto;
-  }
-
-  .mszland{
+  .mabout{
     width:100%;
+    height:500px;
   }
 
-  .mszobor{
-    
-    position:inherit;
-    width:100%;
-    margin-left:10px;
+  .mitem1 {
+    margin-left: 100px;
+    font-size: 30px;
+    font-weight: bold;
+    border-left: 9px solid #184fd6;
+    padding-left: 10px;
+    height: 50px;
   }
 
-  .mmenu {
+  .marabello{
+    background-color: #ffee1a;
+  }
+
+  .mgallery {
+    position: inherit;
+    width: 100%;
+    height: 500px;
+  }
+
+  .mpictures {
+    display: flex;
+    width: 50%;
+    height: 500px;
+    position: relative;
+    //left:150px;
+    justify-content: center;
+    margin: 0 auto;
+    align-content: center;
+  }
+
+  .minpicture {
+    display: flex;
+    //position:absolute;
+    left: 500px;
+    //margin:0 auto;
+
+    .minin {
+      position: relative;
+      left: 135px;
+      top: 100px;
+    }
+  }
+
+  #mabout  {
     display: flex;
     position: inherit;
-    align-items: center;
-    justify-content: center;
     width: 100%;
-    height: 200px;
-    background-position: center;
+    height: 750px;
     background-image: url("../../../assets/caciki_sorminta.svg");
     background-repeat: no-repeat;
     background-size: cover;
-    align-items: center;
-    text-align: center;
-  
-    .mmenu1 {
-      @include createBox(400px, 75px, 1px);
-      position: absolute;
-      background-color: white;
-      font-size: 30px;
-      font-weight: bold;
-      color: #184fd6;
-      border-radius: 50px;
-      border: 0;
-      font-family: "Space Mono";
-      cursor: pointer;
-  
-      &:hover {
-        background-color: #ffee1a;
-        color: #184fd6;
-        border: none;
-        transform: translate(0%, -20%);
-      }
-  
-      .mmenu-link {
-        text-decoration: inherit;
-        color: inherit;
-      }
-    }
-  
-    .mmenu2 {
-      position: relative;
-      top: 30%;
-      color: #68686a;
-      font-weight: bold;
-      font-size: 13px;
-    }
+    flex-direction: column;
+  }
 
-    .mitem1 {
-        margin-left: 100px;
-        font-size: 30px;
-        font-weight: bold;
-        border-left: 9px solid #184fd6;
-        padding-left: 10px;
-        height: 50px;
-      }
-      
-      .mgalery {
-        //display:flex;
-        position: inherit;
-        width: 80%;
-        height: 700px;
-        //margin-left: 50px;
-      
-        .mpictures {
-          display: flex;
-          width: 50%;
-          height: 500px;
-          position: relative;
-          //left:150px;
-          justify-content: center;
-          margin: 0 auto;
-          align-content: center;
-          
-        }
-      
-        .minpicture {
-          display: flex;
-          //position:absolute;
-          left:500px;
-          //margin:0 auto;
-      
-          .minin{
-            position: relative;
-            left:135px;
-            top:100px;
-          }
-        }
-        
-      }
 
-    }
+}
