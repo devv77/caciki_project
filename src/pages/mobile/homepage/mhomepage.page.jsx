@@ -37,7 +37,7 @@ const MobileHomePage = ({}) => (
     <div className="mgallery" id="mgallery">
       <p className="mitem1">galéria</p>
     </div>
-    <div className="mabout">
+    <div className="mmabout">
       <br/>
       <p className="mitem1">kapcsolat</p>
     </div>
