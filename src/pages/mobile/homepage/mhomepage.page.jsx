@@ -35,11 +35,24 @@ const MobileHomePage = ({}) => (
     </div>
 
     <div className="mgallery" id="mgallery">
-      <p className="mitem1">galéria</p>
+      <br/>
+      <span className="mitem1">galéria</span>
     </div>
     <div className="mmabout">
       <br/>
-      <p className="mitem1">kapcsolat</p>
+      <span className="mitem1">kapcsolat</span>
+      <div className="mmaps">
+      <iframe
+          className="mmaps1"
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1139.8790339072991!2d18.432063719810813!3d47.194966850201205!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4769f7be20580885%3A0x7bc5e773d57f02b5!2zU3rDqWtlc2ZlaMOpcnbDoXIsIFpzb2x0IHUuIDEsIDgwMDA!5e0!3m2!1shu!2shu!4v1648575747617!5m2!1shu!2shu"
+          width="80%"
+          height="400px"
+          allowFullScreen={false}
+          loading="lazy"
+          referrerPolicy="no-referrer-when-downgrade"
+        ></iframe>
+      </div>
+
     </div>
 
   </div>
