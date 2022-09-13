@@ -6,7 +6,7 @@ import { ReactComponent as SzoborPic } from "../../../assets/desk_land_szobor-06
 import { ReactComponent as OpenPic } from "../../../assets/telo_kapcs_nyitva-02.svg";
 import { ReactComponent as OTPic } from "../../../assets/telo_kapcs_caciki-04.svg";
 import { ReactComponent as InstaPic } from "../../../assets/caciki_insta_szurke.svg";
-import {ReactComponent as OpenPic2} from "../../../assets/telefon_kapcsolat-01-01.svg"
+import { ReactComponent as OpenPic2 } from "../../../assets/telefon_kapcsolat-01-01.svg";
 import { ReactComponent as FBPic } from "../../../assets/caciki_fb_szurke.svg";
 import { ReactComponent as AboutPic } from "../../../assets/telo_kapcs_info-03.svg";
 
@@ -55,11 +55,21 @@ const MobileHomePage = ({}) => (
         ></iframe>
       </div>
       <div className="mopening">
-        <OTPic className="motpic" />
+        <OpenPic2 className="motpic" />
       </div>
-      <div className="minfos">
-        <OpenPic className="mopenpic" />
-        <AboutPic className="maboutpic" />
+      <div className="mbuttons">
+        <div className="minsta">
+          <a href="https://www.instagram.com/cacikipitabar/" target="_blank">
+            <InstaPic></InstaPic>
+          </a>
+        </div>
+        <div className="mface">
+          <a
+            href="https://www.facebook.com/Caciki-Pitab%C3%A1r-108419611702865"
+            target="_blank">
+            <FBPic></FBPic>
+          </a>
+        </div>
       </div>
     </div>
   </div>

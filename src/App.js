@@ -15,7 +15,7 @@ import MediaQuery from 'react-responsive';
 function App() {
   return (
     <div>
-      <MediaQuery minWidth={1224}>
+      <MediaQuery minWidth={1001}>
       <Router>
         <Header />
         <Routes>
@@ -25,7 +25,7 @@ function App() {
       </Router>
       </MediaQuery>
 
-      <MediaQuery maxWidth={1224}>
+      <MediaQuery maxWidth={1000}>
         <Router>
           <MobileHeader />
           <Routes>

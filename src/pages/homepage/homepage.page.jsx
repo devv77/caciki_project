@@ -66,12 +66,12 @@ const HomePage = ({}) => (
             <OpenPic className="opening" />
             <div className="buttons-site">
               <div className="insta">
-                <a href="https://instagram.com" target="_blank">
+                <a href="https://www.instagram.com/cacikipitabar/" target="_blank">
                   <InstaPic></InstaPic>
                 </a>
               </div>
               <div className="facebook">
-                <a href="https://facebook.com" target="_blank">
+                <a href="https://www.facebook.com/Caciki-Pitab%C3%A1r-108419611702865" target="_blank">
                   <FBPic></FBPic>
                 </a>
               </div>
