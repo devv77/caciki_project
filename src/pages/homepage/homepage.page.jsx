@@ -79,7 +79,9 @@ const HomePage = ({}) => (
                   <FBPic></FBPic>
                 </a>
               </div>
+              
             </div>
+            <div>megtalálsz minket wolton és foodpandán is!</div>
           </div>
         </div>
       </div>
