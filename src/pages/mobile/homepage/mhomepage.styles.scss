@@ -81,7 +81,7 @@
   text-align: center;
 
   .mmenu1 {
-    @include createBox(320px, 70px, 1px);
+    @include createBox(300px, 70px, 1px);
     position: absolute;
     background-color: white;
     font-size: 30px;

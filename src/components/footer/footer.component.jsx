@@ -8,7 +8,13 @@ const Footer=() =>{
     return (
       <div className="footer">
         <div className="address">
-          Caciki pita bar <br /> Székesfehérvár, Zsolt utca 1.
+        <a
+          className="footer-link"
+          href={process.env.PUBLIC_URL + "/Etlap_A4_RGB.pdf"}
+          download
+        >
+          étlap letöltése.
+        </a>
         </div>       
         <div className="info">
           <div className="secret">

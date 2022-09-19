@@ -15,6 +15,7 @@
         align-items: center;
         justify-content: flex-end;
         margin-right:90px;
+        font-style: italic;
     }
     
     .address{
@@ -48,6 +49,9 @@
        height: inherit; 
     }
 
-
+    .footer-link{
+        color:white;
+        font-weight: bold;
+    }
     
 }
