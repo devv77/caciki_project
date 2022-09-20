@@ -97,10 +97,18 @@ const HomePage = ({}) => (
             </div>
             <div className="shop">         
               <div className="foodpanda">
+                <a 
+            href="https://www.foodpanda.hu"
+            target="_blank">
                 <FoodPanda />
+                </a>
               </div>
               <div className="wolt">
+              <a
+            href="https://www.wolt.com"
+            target="_blank">
                 <Wolt />
+                </a>
               </div>
               </div>
           </div>

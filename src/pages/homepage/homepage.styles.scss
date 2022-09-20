@@ -183,40 +183,45 @@
       border: 1px;
       height: 100%;
       width: 45%;
-      padding-left: 30px;
+      padding-left: 30px;      
     }
 
     .opens {
       display: grid;
       float: right;
-      //width:50%;
+      width:55%;
+      padding-left:250px;
+      
 
       .pic1 {
         display: flex;
         position: inherit;
-        width: 80%;
+        //width: 80%;
         //height: 125px;
       }
 
       .opening {
         display: contents;
-
+        
         .opening2 {
-          width: 55%;
+          //width: 55%;
           height: 140px;
+          padding-top:10px;
         }
 
         .opening3 {
-          width: 55%;
-          height: 120px;
+         // width: 55%;
+          height: 90px;
+          padding-top:10px;
         }
       }
 
       .buttons-site {
         display: flex;
         //width:200px;
-
+        padding-top:10px;
         .insta {
+          
           height: 40px;
           width: 40px;
           float: left;
