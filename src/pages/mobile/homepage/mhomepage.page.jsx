@@ -2,13 +2,15 @@ import React from "react";
 import Gallery from "../../../components/gallery/gallery.component";
 
 import { ReactComponent as TypoPic } from "../../../assets/telo_land_caciki-05.svg";
-import { ReactComponent as SzoborPic } from "../../../assets/desk_land_szobor-06-03.svg";
-import { ReactComponent as OpenPic } from "../../../assets/telo_kapcs_nyitva-02.svg";
-import { ReactComponent as OTPic } from "../../../assets/telo_kapcs_caciki-04.svg";
+import { ReactComponent as SzoborPic } from "../../../assets/desk_land_szobor_kisebb.svg";
+//import { ReactComponent as OpenPic } from "../../../assets/telo_kapcs_nyitva-02.svg";
+//import { ReactComponent as OTPic } from "../../../assets/telo_kapcs_caciki-04.svg";
 import { ReactComponent as InstaPic } from "../../../assets/caciki_insta_szurke.svg";
 import { ReactComponent as OpenPic2 } from "../../../assets/telefon_kapcsolat-01-01.svg";
 import { ReactComponent as FBPic } from "../../../assets/caciki_fb_szurke.svg";
-import { ReactComponent as AboutPic } from "../../../assets/telo_kapcs_info-03.svg";
+//import { ReactComponent as AboutPic } from "../../../assets/telo_kapcs_info-03.svg";
+import {ReactComponent as FoodPanda } from "../../../assets/fp_szurke.svg";
+import {ReactComponent as Wolt } from "../../../assets/wolt_szurke.svg";
 
 import "./mhomepage.styles.scss";
 
@@ -68,6 +70,20 @@ const MobileHomePage = ({}) => (
             href="https://www.facebook.com/Caciki-Pitab%C3%A1r-108419611702865"
             target="_blank">
             <FBPic></FBPic>
+          </a>
+        </div>
+        <div className="mface">
+          <a
+            href="https://www.foodpanda.hu"
+            target="_blank">
+            <FoodPanda/>
+          </a>
+        </div>
+        <div className="mface">
+          <a
+            href="https://www.wolt.com"
+            target="_blank">
+            <Wolt/>
           </a>
         </div>
       </div>

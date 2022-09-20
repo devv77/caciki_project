@@ -1,24 +1,26 @@
 import React from "react";
 import Gallery from "../../components/gallery/gallery.component";
 
-//import {ReactComponent as LogoPic} from "../../assets/caciki_tipo_fekete.svg"; 
-import {ReactComponent as TypoPic} from "../../assets/desk_land_caciki-07.svg"
-import {ReactComponent as SzoborPic} from "../../assets/desk_land_szobor-06-03.svg"
-import {ReactComponent as AboutPic} from "../../assets/caciki_info-02.svg"
+//import {ReactComponent as LogoPic} from "../../assets/caciki_tipo_fekete.svg";
+import { ReactComponent as TypoPic } from "../../assets/desk_land_caciki-07.svg";
+import { ReactComponent as SzoborPic } from "../../assets/desk_land_szobor_kisebb.svg";
+import { ReactComponent as AboutPic } from "../../assets/caciki_info-02.svg";
 //import {ReactComponent as OpenPic} from "../../assets/nyitvatartas.svg"
-import {ReactComponent as OpenPic} from "../../assets/caciki_info-01.svg"
-import {ReactComponent as OpenPic2} from "../../assets/telo_kapcs_nyitva-02.svg"
-import {ReactComponent as OpenPic3} from "../../assets/telo_kapcs_info-03.svg"
-import {ReactComponent as InstaPic} from "../../assets/caciki_insta_szurke.svg"
-import {ReactComponent as FBPic} from "../../assets/caciki_fb_szurke.svg"
+//import { ReactComponent as OpenPic } from "../../assets/caciki_info-01.svg";
+import { ReactComponent as OpenPic2 } from "../../assets/telo_kapcs_nyitva-02.svg";
+import { ReactComponent as OpenPic3 } from "../../assets/telo_kapcs_info-03.svg";
+import { ReactComponent as InstaPic } from "../../assets/caciki_insta_szurke.svg";
+import { ReactComponent as FBPic } from "../../assets/caciki_fb_szurke.svg";
+import { ReactComponent as FoodPanda } from "../../assets/fp_szurke.svg";
+import { ReactComponent as Wolt } from "../../assets/wolt_szurke.svg";
 
 import "./homepage.styles.scss";
 
 const HomePage = ({}) => (
   <div id="homepage" className="homePage">
     <div className="landing">
-      <SzoborPic className="szobor"/>
-      <TypoPic className="main-picture" />    
+      <SzoborPic className="szobor" />
+      <TypoPic className="main-picture" />
     </div>
     <div id="menu" className="menu">
       <button className="menu1">
@@ -36,16 +38,17 @@ const HomePage = ({}) => (
       </p>
     </div>
 
-      <div id="gallery" className="galery">
-        <br/>
-        <span className="item1">galéria</span>
-        <div className="pictures">
-          <div className="inpicture">
-            <div className="inin"><Gallery></Gallery>            
-            </div>            
+    <div id="gallery" className="galery">
+      <br />
+      <span className="item1">galéria</span>
+      <div className="pictures">
+        <div className="inpicture">
+          <div className="inin">
+            <Gallery></Gallery>
           </div>
         </div>
       </div>
+    </div>
 
     <div id="info" className="about">
       <p className="item1">kapcsolat</p>
@@ -65,23 +68,41 @@ const HomePage = ({}) => (
           <AboutPic className="pic1" />
 
           <div className="opening">
-            <div><OpenPic2 className="opening2" /></div>
+            <div>
+              <OpenPic2 className="opening2" />
+            </div>
             <div></div>
-            <OpenPic3 className="opening3"/>
+            <OpenPic3 className="opening3" />
             <div className="buttons-site">
               <div className="insta">
-                <a href="https://www.instagram.com/cacikipitabar/" target="_blank">
+                <a
+                  href="https://www.instagram.com/cacikipitabar/"
+                  target="_blank"
+                >
                   <InstaPic></InstaPic>
                 </a>
               </div>
               <div className="facebook">
-                <a href="https://www.facebook.com/Caciki-Pitab%C3%A1r-108419611702865" target="_blank">
+                <a
+                  href="https://www.facebook.com/Caciki-Pitab%C3%A1r-108419611702865"
+                  target="_blank"
+                >
                   <FBPic></FBPic>
                 </a>
               </div>
+            </div>
+            <div className="shop">
+              <div>megtalálsz minket <Wolt className="wolt"/> és <FoodPanda className="foodpanda"/> is!</div>
               
             </div>
-            <div>megtalálsz minket wolton és foodpandán is!</div>
+            <div className="shop">         
+              <div className="foodpanda">
+                <FoodPanda />
+              </div>
+              <div className="wolt">
+                <Wolt />
+              </div>
+              </div>
           </div>
         </div>
       </div>

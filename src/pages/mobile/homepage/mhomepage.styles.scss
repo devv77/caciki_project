@@ -199,7 +199,7 @@
   .mbuttons{
     display: flex;
     justify-content: right;
-    padding-right:120px;
+    padding-right:40px;
 
     .minsta{     
       width: 30px;
@@ -213,6 +213,14 @@
       height: 40px;
       float:right;
       margin-left: 5px;
+    }
+
+    .fb2:hover {
+      fill: #184fd6;
+    }
+
+    .cls-1:hover{
+      fill: #184fd6;
     }
   }
   
