@@ -57,7 +57,9 @@ const MobileHomePage = ({}) => (
         ></iframe>
       </div>
       <div className="mopening">
+        <a href="tel:+36205116510">
         <OpenPic2 className="motpic" />
+        </a>
       </div>
       <div className="mbuttons">
         <div className="minsta">

@@ -219,7 +219,7 @@
       .buttons-site {
         display: flex;
         //width:200px;
-        padding-top:10px;
+        padding-top:20px;
         .insta {
           
           height: 40px;
@@ -236,12 +236,26 @@
         .facebook {
           height: 40px;
           width: 40px;
+          margin-right:15px;
           float: right;
+        }
+
+        .foodpanda {
+          margin-right:15px;
+          height: 40px;
+          width: 40px;
+          //float: right;
+        }
+        .wolt {
+          height: 40px;
+          width: 40px;
+          //float: left;
         }
       }
 
       .shop {
         display:flex;
+        margin-top:10px;
 
         .foodpanda {
           margin-right:15px;

@@ -90,27 +90,21 @@ const HomePage = ({}) => (
                   <FBPic></FBPic>
                 </a>
               </div>
-            </div>
-            <div className="shop">
-              <div>megtalálsz minket <Wolt className="wolt"/> és <FoodPanda className="foodpanda"/> is!</div>
-              
-            </div>
-            <div className="shop">         
               <div className="foodpanda">
-                <a 
-            href="https://www.foodpanda.hu"
-            target="_blank">
-                <FoodPanda />
+                <a href="https://www.foodpanda.hu" target="_blank">
+                  <FoodPanda />
                 </a>
               </div>
               <div className="wolt">
-              <a
-            href="https://www.wolt.com"
-            target="_blank">
-                <Wolt />
+                <a href="https://www.wolt.com" target="_blank">
+                  <Wolt />
                 </a>
               </div>
-              </div>
+            </div>
+            <div className="shop">              
+              <div>megtalálsz minket FoodPandán és WOLT-on!</div>
+            </div>
+            
           </div>
         </div>
       </div>
