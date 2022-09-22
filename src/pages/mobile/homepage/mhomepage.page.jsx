@@ -9,38 +9,44 @@ import { ReactComponent as InstaPic } from "../../../assets/caciki_insta_szurke.
 import { ReactComponent as OpenPic2 } from "../../../assets/telefon_kapcsolat-01-01.svg";
 import { ReactComponent as FBPic } from "../../../assets/caciki_fb_szurke.svg";
 //import { ReactComponent as AboutPic } from "../../../assets/telo_kapcs_info-03.svg";
-import {ReactComponent as FoodPanda } from "../../../assets/fp_szurke.svg";
-import {ReactComponent as Wolt } from "../../../assets/wolt_szurke.svg";
+import { ReactComponent as FoodPanda } from "../../../assets/fp_szurke.svg";
+import { ReactComponent as Wolt } from "../../../assets/wolt_szurke.svg";
 
 import "./mhomepage.styles.scss";
 
 const MobileHomePage = ({}) => (
-  <div id="mhomepage" className="mhomepage">
+  <div className="mhomepage">
     <div className="mlanding">
       <TypoPic className="mtypo" />
     </div>
     <div className="mszland">
       <SzoborPic className="mszobor" />
     </div>
-    <div id="mmenu" className="mmenu">
-      <button className="mmenu1">
-        <a
-          className="mmenu-link"
-          href={process.env.PUBLIC_URL + "/Etlap_A4_RGB.pdf"}
-          download
-        >
-          Étlap letöltése
-        </a>
-      </button>
-      <p className="mmenu2">
-        A gomb megnyomása után az étlapunk
-        <br /> letöltésre kerül PDF formátumban.
-      </p>
+    <div className="metlap">
+      <div className="mmenu">
+        <button className="mmenu1">
+          <a
+            className="mmenu-link"
+            href={process.env.PUBLIC_URL + "/Etlap_A4_RGB.pdf"}
+            download
+          >
+            Étlap letöltése
+          </a>
+        </button>
+        <p className="mmenu2">
+          A gomb megnyomása után az étlapunk
+          <br /> letöltésre kerül PDF formátumban.
+        </p>
+      </div>
     </div>
-
-    <div className="mgallery" id="mgallery">
+   
+    <div className="mgallery">
+    <div className="soon">
+      
       <br />
       <span className="mitem1">galéria</span>
+      <div><span className="soon-text">HAMAROSAN</span></div>
+    </div>
     </div>
     <div className="mmabout">
       <br />
@@ -58,7 +64,7 @@ const MobileHomePage = ({}) => (
       </div>
       <div className="mopening">
         <a href="tel:+36205116510">
-        <OpenPic2 className="motpic" />
+          <OpenPic2 className="motpic" />
         </a>
       </div>
       <div className="mbuttons">
@@ -70,25 +76,24 @@ const MobileHomePage = ({}) => (
         <div className="mface">
           <a
             href="https://www.facebook.com/Caciki-Pitab%C3%A1r-108419611702865"
-            target="_blank">
+            target="_blank"
+          >
             <FBPic></FBPic>
           </a>
         </div>
         <div className="mface">
-          <a
-            href="https://www.foodpanda.hu"
-            target="_blank">
-            <FoodPanda/>
+          <a href="https://www.foodpanda.hu" target="_blank">
+            <FoodPanda />
           </a>
         </div>
         <div className="mface">
-          <a
-            href="https://www.wolt.com"
-            target="_blank">
-            <Wolt/>
+          <a href="https://www.wolt.com" target="_blank">
+            <Wolt />
           </a>
         </div>
+        
       </div>
+      <div className="mrendeles">Kérheted házhoz is!</div>
     </div>
   </div>
 );

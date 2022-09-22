@@ -37,19 +37,22 @@ const HomePage = ({}) => (
         <br /> letöltésre kerül PDF formátumban.
       </p>
     </div>
-
+    
     <div id="gallery" className="galery">
+    <div className="soon">
       <br />
       <span className="item1">galéria</span>
-      <div className="pictures">
+      <div className="pictures">   
+      <span className="soon-text">HAMAROSAN</span>   
         <div className="inpicture">
+        
           <div className="inin">
-            <Gallery></Gallery>
+
           </div>
         </div>
       </div>
     </div>
-
+</div>
     <div id="info" className="about">
       <p className="item1">kapcsolat</p>
 
@@ -102,7 +105,7 @@ const HomePage = ({}) => (
               </div>
             </div>
             <div className="shop">              
-              <div>megtalálsz minket FoodPandán és WOLT-on!</div>
+              <div>Kérheted házhoz is!</div>
             </div>
             
           </div>

@@ -65,52 +65,54 @@
   //width: 98%;
   //margin-left: 10px;
 }
-
-.mmenu {  
+.metlap {
   display: flex;
-  position: inherit;
-  align-items: center;
-  justify-content: center;
   width: 100%;
-  height: 200px;
-  background-position: center;
-  background-image: url("../../../assets/caciki_sorminta.svg");
-  background-repeat: no-repeat;
-  background-size: cover;
-  align-items: center;
-  text-align: center;
+  .mmenu {
+    display: flex;
+    position: inherit;
+    align-items: center;
+    justify-content: center;
+    width: 300%;
+    height: 200px;
+    background-position: center;
+    background-image: url("../../../assets/caciki_sorminta.svg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    text-align: center;
 
-  .mmenu1 {
-    @include createBox(350px, 60px, 1px);
-    position: absolute;
-    background-color: white;
-    font-size: 28px;
-    font-weight: bold;
-    color: #184fd6;
-    border-radius: 50px;
-    border: 0;
-    font-family: "Space Mono";
-    cursor: pointer;
-
-    &:hover {
-      background-color: #ffee1a;
+    .mmenu1 {
+      @include createBox(350px, 60px, 1px);
+      position: absolute;
+      background-color: white;
+      font-size: 28px;
+      font-weight: bold;
       color: #184fd6;
-      border: none;
-      transform: translate(0%, -20%);
+      border-radius: 50px;
+      border: 0;
+      font-family: "Space Mono";
+      cursor: pointer;
+
+      &:hover {
+        background-color: #ffee1a;
+        color: #184fd6;
+        border: none;
+        transform: translate(0%, -20%);
+      }
+
+      .mmenu-link {
+        text-decoration: inherit;
+        color: inherit;
+      }
     }
 
-    .mmenu-link {
-      text-decoration: inherit;
-      color: inherit;
+    .mmenu2 {
+      position: relative;
+      top: 30%;
+      color: #68686a;
+      font-weight: bold;
+      font-size: 15px;
     }
-  }
-
-  .mmenu2 {
-    position: relative;
-    top: 30%;
-    color: #68686a;
-    font-weight: bold;
-    font-size: 15px;
   }
 }
 
@@ -120,7 +122,7 @@
   font-weight: bold;
   border-left: 9px solid #184fd6;
   padding-left: 10px;
-  margin-bottom:10px;
+  margin-bottom: 10px;
   height: 50px;
 }
 
@@ -128,29 +130,55 @@
   position: inherit;
   width: 100%;
   height: 500px;
-}
 
-.mpictures {
-  display: flex;
-  width: 50%;
-  height: 500px;
-  position: relative;
-  //left:150px;
-  justify-content: center;
-  margin: 0 auto;
-  align-content: center;
-}
+  .soon {
+    background-color: #68686a;
 
-.minpicture {
-  display: flex;
-  //position:absolute;
-  left: 500px;
-  //margin:0 auto;
+    height: 100%;
 
-  .minin {
+    .soon-text {
+      display: flex;
+      position: relative;
+      width: 80%;
+      top: 130px;
+
+      font-family: "Space Mono";
+      font-style: normal;
+      font-weight: 700;
+      font-size: 60px;
+
+      display: flex;
+      align-items: center;
+      text-align: center;
+      margin: 0 auto;
+      color: #ffffff;
+
+      transform: rotate(-15.14deg);
+    }
+  }
+
+  .mpictures {
+    display: flex;
+    width: 50%;
+    height: 500px;
     position: relative;
-    left: 135px;
-    top: 100px;
+    //left:150px;
+    justify-content: center;
+    margin: 0 auto;
+    align-content: center;
+  }
+
+  .minpicture {
+    display: flex;
+    //position:absolute;
+    left: 500px;
+    //margin:0 auto;
+
+    .minin {
+      position: relative;
+      left: 135px;
+      top: 100px;
+    }
   }
 }
 
@@ -158,60 +186,55 @@
   display: flex;
   position: inherit;
   width: 100%;
-  height: 700px;
+  height: 750px;
   background-image: url("../../../assets/caciki_sorminta.svg");
   background-repeat: no-repeat;
   background-size: cover;
-  flex-direction: column;  
+  flex-direction: column;
 
-  .mmaps{
+  .mmaps {
     position: inherit;
-    display:flex;
+    display: flex;
     margin: 0 auto;
-    height:400px;
-    width:80%;
-    
+    height: 400px;
+    width: 80%;
 
-    .mmaps1{
-      border-radius:25px;
-      border:1px;
-      width:100%;
-      height:100%;
+    .mmaps1 {
+      border-radius: 25px;
+      border: 1px;
+      width: 100%;
+      height: 100%;
     }
   }
-  
-  .mopening{
+
+  .mopening {
     position: inherit;
-    display:flex;
-    height: 180px;
-    width:80%;
+    display: flex;
+    height: 210px;
+    width: 80%;
     margin: 0 auto;
     padding-top: 20px;
-    
-    .motpic{     
-      height:100%;
+
+    .motpic {
+      height: 100%;
     }
-
-    
-
   }
 
-  .mbuttons{
+  .mbuttons {
     display: flex;
     justify-content: right;
-    padding-right:55px;
+    padding-right: 55px;
 
-    .minsta{     
+    .minsta {
       width: 30px;
-      height: 40px;
-      float:left;
-      
+      height: 30px;
+      float: left;
     }
-  
-    .mface{      
+
+    .mface {
       width: 30px;
-      height: 40px;
-      float:right;
+      height: 30px;
+      float: right;
       margin-left: 10px;
     }
 
@@ -219,29 +242,35 @@
       fill: #184fd6;
     }
 
-    .cls-1:hover{
+    .cls-1:hover {
       fill: #184fd6;
     }
   }
-  
 
-  .minfos{
+  .minfos {
     position: inherit;
-    display:flex;
+    display: flex;
     height: 200px;
     margin: 0 auto;
     justify-content: space-around;
 
-    .mopenpic{
+    .mopenpic {
       height: 55%;
-      width:50%;
+      width: 50%;
       padding-right: 15px;
     }
 
-    .maboutpic{
-      height:45%;
-      width:50%;
+    .maboutpic {
+      height: 45%;
+      width: 50%;
     }
   }
 
+  .mrendeles{
+    font-size: 14px;
+    text-align: right;
+    padding-right:40px;
+    font-family: "Space Mono";
+    font-style: normal;
+  }
 }

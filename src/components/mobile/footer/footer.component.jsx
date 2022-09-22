@@ -11,9 +11,9 @@ const MobileFooter=() =>{
           
         </div>       
         <div className="info">
-          <div className="secret">
+         {/* <div className="secret">
             Created by: David Lencses <br /> Designed by: Alex Kemény
-          </div>
+          </div>*/}
           <div>2022</div>
         </div>
       </div>
