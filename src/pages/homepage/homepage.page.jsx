@@ -8,7 +8,7 @@ import { ReactComponent as AboutPic } from "../../assets/caciki_info-02.svg";
 //import {ReactComponent as OpenPic} from "../../assets/nyitvatartas.svg"
 //import { ReactComponent as OpenPic } from "../../assets/caciki_info-01.svg";
 import { ReactComponent as OpenPic2 } from "../../assets/telo_kapcs_nyitva-02.svg";
-import { ReactComponent as OpenPic3 } from "../../assets/telo_kapcs_info-03.svg";
+import { ReactComponent as OpenPic3 } from "../../assets/kapcsolat_telefonszam_cim-01.svg";
 import { ReactComponent as InstaPic } from "../../assets/caciki_insta_szurke.svg";
 import { ReactComponent as FBPic } from "../../assets/caciki_fb_szurke.svg";
 import { ReactComponent as FoodPanda } from "../../assets/fp_szurke.svg";
