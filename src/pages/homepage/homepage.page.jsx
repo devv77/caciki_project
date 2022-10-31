@@ -13,6 +13,9 @@ import { ReactComponent as InstaPic } from "../../assets/caciki_insta_szurke.svg
 import { ReactComponent as FBPic } from "../../assets/caciki_fb_szurke.svg";
 import { ReactComponent as FoodPanda } from "../../assets/fp_szurke.svg";
 import { ReactComponent as Wolt } from "../../assets/wolt_szurke.svg";
+import Carousel from "../../components/gallery/carousel"
+import "react-responsive-carousel/lib/styles/carousel.min.css";
+
 
 import "./homepage.styles.scss";
 
@@ -26,7 +29,7 @@ const HomePage = ({}) => (
       <button className="menu1">
         <a
           className="menu-link"
-          href={process.env.PUBLIC_URL + "/Etlap_A4_RGB.pdf"}
+          href={process.env.PUBLIC_URL + "/Caciki_Etlap_A4.pdf"}
           download
         >
           Étlap letöltése
@@ -39,16 +42,12 @@ const HomePage = ({}) => (
     </div>
     
     <div id="gallery" className="galery">
-    <div className="soon">
+    <div className="gn">
       <br />
       <span className="item1">galéria</span>
-      <div className="pictures">   
-      <span className="soon-text">HAMAROSAN</span>   
+      <div className="pictures">     
         <div className="inpicture">
-        
-          <div className="inin">
-
-          </div>
+        <Carousel></Carousel>
         </div>
       </div>
     </div>

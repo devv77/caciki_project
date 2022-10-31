@@ -27,7 +27,7 @@ const MobileHomePage = ({}) => (
         <button className="mmenu1">
           <a
             className="mmenu-link"
-            href={process.env.PUBLIC_URL + "/Etlap_A4_RGB.pdf"}
+            href={process.env.PUBLIC_URL + "/Caciki_Etlap_A4.pdf"}
             download
           >
             Étlap letöltése

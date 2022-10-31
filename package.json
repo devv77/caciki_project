@@ -2,7 +2,7 @@
   "name": "caciki-proj",
   "version": "1.0.0",
   "private": true,
-  "homepage": "https://pite4.duckdns.org/",
+  "homepage": "https://caciki.hu/",
   "dependencies": {
     "@emotion/react": "^11.9.0",
     "@emotion/styled": "^11.8.1",
@@ -17,6 +17,7 @@
     "react-dom": "^17.0.2",
     "react-icons": "^4.3.1",
     "react-responsive": "^9.0.0-beta.10",
+    "react-responsive-carousel": "^3.2.23",
     "react-router-dom": "^6.2.2",
     "react-scripts": "5.0.0",
     "source-map-explorer": "^2.5.2",
