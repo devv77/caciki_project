@@ -11,7 +11,8 @@ import { ReactComponent as FBPic } from "../../../assets/caciki_fb_szurke.svg";
 //import { ReactComponent as AboutPic } from "../../../assets/telo_kapcs_info-03.svg";
 import { ReactComponent as FoodPanda } from "../../../assets/fp_szurke.svg";
 import { ReactComponent as Wolt } from "../../../assets/wolt_szurke.svg";
-
+import Carousel from "../../../components/gallery/mcarousel"
+import "react-responsive-carousel/lib/styles/carousel.min.css";
 import "./mhomepage.styles.scss";
 
 const MobileHomePage = ({}) => (
@@ -45,7 +46,12 @@ const MobileHomePage = ({}) => (
       
       <br />
       <span className="mitem1">galéria</span>
-      <div><span className="soon-text">HAMAROSAN</span></div>
+      <div className="mpictures">
+        <div className="minpicture">
+        <Carousel></Carousel>
+        </div>
+        
+      </div>
     </div>
     </div>
     <div className="mmabout">

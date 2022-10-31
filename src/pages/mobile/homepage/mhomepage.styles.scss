@@ -129,10 +129,10 @@
 .mgallery {
   position: inherit;
   width: 100%;
-  height: 500px;
+  height: 400px;
 
   .soon {
-    background-color: #68686a;
+    //background-color: #68686a;
 
     height: 100%;
 
@@ -155,17 +155,20 @@
 
       transform: rotate(-15.14deg);
     }
+
+
   }
 
   .mpictures {
     display: flex;
     width: 50%;
-    height: 500px;
+    height: 300px;
     position: relative;
     //left:150px;
     justify-content: center;
     margin: 0 auto;
     align-content: center;
+
   }
 
   .minpicture {
@@ -173,7 +176,7 @@
     //position:absolute;
     left: 500px;
     //margin:0 auto;
-
+    padding-top:30px;
     .minin {
       position: relative;
       left: 135px;
